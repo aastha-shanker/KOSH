@@ -8,7 +8,16 @@
 body{
   background-color: rgb(255, 255, 157);
 }
+ul li a{
+  cursor: pointer;
+  color: #684430;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
 nav{
+  background-color: rgb(255, 255, 157);;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -17,6 +26,10 @@ nav{
   font-family:'KAVOON';
   color: #684430;
   font-size: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 800;
 }
 .heading{
   display: flex;
@@ -71,21 +84,22 @@ nav{
 .kosh-description {
   text-align: center;
   max-width: 700px;
-  margin: 18px auto; /* centers horizontally with spacing */
+  margin-top: 128px; 
+  margin-left: 284px;
   font-family: 'Poppins', sans-serif;
   padding: 4px;
   line-height: 1.6;
-  color: #3a1a1a; /* deep brown for buttercream theme */opacity: 0;
+  color: #3a1a1a; 
+  opacity: 0;
   transform: translateY(30px);
   animation: slideFadeIn 1s ease-out forwards;
   animation-delay: 0.5s;
-
   
 }
 
 .kosh-description h1 {
   font-size: 2em;
-  color: #472b13; /* buttercream gold-ish tone */
+  color: #472b13; 
   
   
 }
@@ -104,9 +118,9 @@ nav{
 }
 
 .genz-line {
-  font-size: 20px; /* increase or decrease as needed */
+  font-size: 20px; 
   font-weight: 500;
-  color: #3e1717; /* optional: to make it stand out */
+  color: #3e1717; 
 }
 
 .features{
@@ -133,7 +147,7 @@ nav{
   max-width: 1000px;
   margin: 40px auto;
   font-family: 'Poppins', sans-serif;
-  flex-wrap: wrap; /* Makes it responsive */
+  flex-wrap: wrap; 
   transform: translateY(30px);
   animation: slideFadeIn 1s ease-out forwards;
   animation-delay: 1.5s;
@@ -172,7 +186,7 @@ nav{
   display: flex;
   align-items: center;
   gap: 30px;
-  background-color: rgb(240, 240, 129);  /* Soft pinkish tone for a playful feel */
+  background-color: rgb(240, 240, 129);  
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -197,13 +211,13 @@ nav{
 .expenditure-text h2 {
   font-size: 2rem;
   margin-bottom: 0px;
-  color:#6e4233; /* Rich pink/maroon */
+  color:#6e4233; 
 }
 
 .expenditure-text p {
   font-size: 1.1rem;
   line-height: 1.8;
-  margin-bottom: 12px;  /* adds space between paragraphs */
+  margin-bottom: 12px;  
   text-align: justify;
   color: #5e2a3a;
 }
@@ -216,14 +230,14 @@ nav{
   font-weight: bold;
   color: #91513a;
   text-align: center;
-  line-height: 1.6;         /* Adds space inside quote */
+  line-height: 1.6;         
 }
 
 .analyse{
   display: flex;
   align-items: center;
   gap: 30px;
-  background-color: rgb(240, 240, 129);  /* Soft pinkish tone for a playful feel */
+  background-color: rgb(240, 240, 129);  
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -250,13 +264,13 @@ nav{
 .analyse-text h2 {
   font-size: 2rem;
   margin-bottom: 0px;
-  color:#6e4233; /* Rich pink/maroon */
+  color:#6e4233; 
 }
 
 .analyse-text p {
   font-size: 1.1rem;
   line-height: 1.8;
-  margin-bottom: 12px;  /* adds space between paragraphs */
+  margin-bottom: 12px;  
   text-align: justify;
   color: #5e2a3a;
 }
@@ -269,7 +283,7 @@ nav{
   font-weight: bold;
   color: #91513a;
   text-align: center;
-  line-height: 1.6;         /* Adds space inside quote */
+  line-height: 1.6;        
 }
 .community{
   display: flex;
@@ -300,13 +314,13 @@ nav{
 .community-text h2 {
   font-size: 2rem;
   margin-bottom: 0px;
-  color:#6e4233; /* Rich pink/maroon */
+  color:#6e4233; 
 }
 
 .community-text p {
   font-size: 1.1rem;
   line-height: 1.8;
-  margin-bottom: 12px;  /* adds space between paragraphs */
+  margin-bottom: 12px;  
   text-align: justify;
   color: #5e2a3a;
 }
@@ -326,7 +340,7 @@ nav{
   animation-delay: 1s;
 }
 
-/* Keyframes for the animation */
+
 @keyframes slideFadeIn {
   to {
     opacity: 1;
