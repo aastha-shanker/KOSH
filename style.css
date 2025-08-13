@@ -543,3 +543,169 @@ svg{
 .ai:hover::after {
   opacity: 1;
 }
+/* Tablet View (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 18px;
+    padding-left: 10px;
+    width: 100vw;
+  }
+
+  .listing {
+    gap: 30px;
+    font-size: 22px;
+  }
+
+  .kosh-description {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140px;
+    padding: 0 20px;
+  }
+
+  .contact {
+    padding-left: 120px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .features, .aboutus {
+    font-size: 25px;
+    padding: 0 20px;
+  }
+
+  .boxes,
+  .challenges-container,
+  .expenditure-container,
+  .analyse,
+  .community {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .challenges-image img,
+  .expenditure-image img,
+  .analyse-image img,
+  .community-image img {
+    max-width: 300px;
+  }
+}
+
+/* Mobile View (max-width: 767px) */
+@media screen and (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 0;
+    width: 100vw;
+  }
+
+  .heading {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .pageName {
+    font-size: 30px;
+    padding: 10px 0;
+  }
+
+  .logo {
+    padding-top: 10px;
+  }
+
+  .listing {
+    flex-direction: column;
+    gap: 12px;
+    font-size: 20px;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .kosh-description {
+    margin: 140px 20px 0 20px;
+    font-size: 16px;
+  }
+
+  .kosh-description h1 {
+    font-size: 1.5em;
+  }
+
+  .kosh-description em {
+    font-size: 20px;
+  }
+
+  .features,
+  .aboutus {
+    font-size: 22px;
+    padding: 0 15px;
+  }
+
+  .boxes,
+  .challenges-container,
+  .expenditure-container,
+  .analyse,
+  .community {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .challenges-image img,
+  .expenditure-image img,
+  .analyse-image img,
+  .community-image img {
+    max-width: 100%;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    gap: 30px;
+  }
+
+  .ai {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .ai img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .ai::after {
+    font-size: 10px;
+    bottom: 120%;
+    left: 50%;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .linkedin,
+  .gmail,
+  .github,
+  .twitter {
+    width: 50px;
+    height: 50px;
+  }
+
+  .linkedin svg,
+  .gmail svg,
+  .github svg,
+  .twitter svg {
+    width: 24px;
+    height: 24px;
+  }
+}
