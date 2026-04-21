@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KOSH Login</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Lateef", serif;
+      background-color: rgb(255, 255, 157);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #684430;
+    }
+
+    .card {
+      background: rgb(255, 255, 157);
+      border: 2px solid #684430;
+      border-radius: 20px;
+      padding: 40px;
+      width: 320px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      font-family: "Kavoon", cursive;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 2px solid #684430;
+      border-radius: 10px;
+      background: transparent;
+      color: #684430;
+      font-size: 16px;
+      outline: none;
+    }
+
+    input::placeholder {
+      color: #8a5a3c;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 10px;
+      background-color: #684430;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #3b1f12;
+    }
+
+    .msg {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #3b1f12;
+    }
+
+    .link {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .link a {
+      color: #3b1f12;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h2>Welcome to KOSH</h2>
+
+    <input id="email" type="email" placeholder="Enter email" />
+    <input id="password" type="password" placeholder="Enter password" />
+
+    <button onclick="login()">Login</button>
+
+    <p class="msg" id="msg"></p>
+
+    <div class="link">
+      New here? <a href="signup.html">Create account</a>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+
+</body>
+</html>

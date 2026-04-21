@@ -1,0 +1,142 @@
+body {
+  background-color: rgb(255, 255, 157);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  font-family: 'Kavoon';
+  color: #684430;
+}
+
+.back-btn {
+  text-decoration: none;
+  background: #684430;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+
+.header {
+  text-align: center;
+  margin-top: 20px;
+  color: #3a1a1a;
+}
+
+
+.progress-section {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #684430;
+}
+
+
+.challenge-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.challenge-card {
+  background: linear-gradient(135deg, #fff7c2, #ffeaa7);
+  border-radius: 20px;
+  padding: 20px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.challenge-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+
+.challenge-card h3 {
+  color: #684430;
+  margin-bottom: 10px;
+}
+
+
+.challenge-card p {
+  color: #973434;
+  font-weight: bold;
+}
+
+
+.challenge-card button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  background: #684430;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.challenge-card button:hover {
+  background: #3b1f12;
+}
+
+
+.completed {
+  background: linear-gradient(135deg, #dfffd6, #b2f7b2);
+  opacity: 0.8;
+}
+
+.completed button {
+  background: gray;
+  cursor: not-allowed;
+}
+
+
+.motivation {
+  text-align: center;
+  margin: 30px 0;
+  font-style: italic;
+  color: #684430;
+}
+.progress-bar {
+  width: 80%;
+  height: 15px;
+  background: #ddd;
+  border-radius: 10px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+#progressFill {
+  height: 100%;
+  width: 0%;
+  background: #55efc4;
+  transition: width 0.4s ease;
+}
+
+#resetBtn {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  background: #973434;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#resetBtn:hover {
+  background: #5e1f1f;
+}

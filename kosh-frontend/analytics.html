@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kosh - Analytics</title>
+  <link rel="stylesheet" href="analytics.css">
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<a href="index.html" class="back">⬅ Back</a>
+
+<div class="header">
+  <h1>📊 Analytics Zone</h1>
+  <p class="tagline">“Numbers don’t lie… but they WILL expose you.”</p>
+</div>
+
+<div class="container">
+
+  
+  <div class="summary-container">
+
+  <div class="summary-card">
+    <h3>Total 💰</h3>
+    <p id="totalCard">₹0</p>
+  </div>
+
+  <div class="summary-card">
+    <h3>Average 📊</h3>
+    <p id="avgCard">₹0</p>
+  </div>
+
+  <div class="summary-card">
+    <h3>Top Category 🏆</h3>
+    <p id="topCategory">None</p>
+  </div>
+
+</div>
+
+  <div class="charts-container">
+  
+ <div class="chart-box">
+  <h3>Category Breakdown 🥧</h3>
+  <div class="chart-wrapper">
+    <canvas id="pieChart"></canvas>
+  </div>
+</div>
+
+<div class="chart-box">
+  <h3>Daily Spending 📈</h3>
+  <div class="chart-wrapper">
+    <canvas id="barChart"></canvas>
+  </div>
+</div>
+
+</div>
+
+  <div id="insight" class="insight-box"></div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="analytics.js"></script>
+
+</body>
+</html>

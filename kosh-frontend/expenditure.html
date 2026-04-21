@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kosh - Expenditure</title>
+  <link rel="stylesheet" href="expenditure.css">
+</head>
+
+<body>
+
+<a href="index.html" class="back">⬅ Back to Home</a>
+
+<div class="header">
+  <h1>🧾 Expenditure Zone</h1>
+  <p class="tagline">“Your money is being watched 👀”</p>
+</div>
+
+<div class="container">
+
+  <div class="expense-form">
+    <input type="number" id="amount" placeholder="Enter amount">
+    <input type="text" id="category" placeholder="Category">
+    <button onclick="addExpense()">Add</button>
+  </div>
+
+  <ul id="expenseList"></ul>
+
+</div>
+
+<script src="expenditure.js"></script>
+
+</body>
+
+</html>
