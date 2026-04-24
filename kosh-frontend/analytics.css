@@ -121,3 +121,20 @@ canvas {
   font-weight: bold;
   color: #973434;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  font-family: 'Kavoon';
+  color: #684430;
+}
+
+
+.back-btn {
+  text-decoration: none;
+  background: #684430;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 10px;
+}

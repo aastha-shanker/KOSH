@@ -3,11 +3,18 @@
 <head>
   <title>Kosh - Expenditure</title>
   <link rel="stylesheet" href="expenditure.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+<link rel="icon" href="chest.png  " type="image/png" sizes="32x32">
 </head>
 
 <body>
 
-<a href="index.html" class="back">⬅ Back to Home</a>
+<nav class="navbar" style="position: sticky; top: 0;">
+    <h1>KOSH 💰</h1>
+    <a href="index.html" class="back-btn">⬅ Back</a>
+  </nav>
 
 <div class="header">
   <h1>🧾 Expenditure Zone</h1>
@@ -19,7 +26,7 @@
   <div class="expense-form">
     <input type="number" id="amount" placeholder="Enter amount">
     <input type="text" id="category" placeholder="Category">
-    <button onclick="addExpense()">Add</button>
+    <button onclick="addExpenses()">Add</button>
   </div>
 
   <ul id="expenseList"></ul>

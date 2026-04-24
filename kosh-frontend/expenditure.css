@@ -5,7 +5,7 @@ body {
   padding: 0;
 }
 
-/* HEADER */
+
 .header {
   text-align: center;
   padding: 30px 10px;
@@ -21,7 +21,7 @@ body {
   color: #973434;
 }
 
-/* CONTAINER */
+
 .container {
   max-width: 800px;
   margin: auto;
@@ -31,7 +31,7 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* FORM */
+
 .expense-form {
   display: flex;
   gap: 10px;
@@ -62,7 +62,7 @@ body {
   background-color: #3b1f12;
 }
 
-/* LIST */
+
 #expenseList {
   list-style: none;
   padding: 0;
@@ -80,7 +80,7 @@ body {
   box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
-/* DELETE BUTTON */
+
 .delete-btn {
   background: #973434;
   color: white;
@@ -94,11 +94,28 @@ body {
   background: #5e1e1e;
 }
 
-/* BACK BUTTON */
+
 .back {
   display: inline-block;
   margin: 20px;
   text-decoration: none;
   color: #684430;
   font-weight: bold;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  font-family: 'Kavoon';
+  color: #684430;
+}
+
+
+.back-btn {
+  text-decoration: none;
+  background: #684430;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 10px;
 }

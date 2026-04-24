@@ -1,6 +1,6 @@
 const API = "http://127.0.0.1:3000"; // ✅ FIXED
 
-function addExpense() {
+function addExpenses() {
   const amount = document.getElementById("amount").value;
   const category = document.getElementById("category").value;
 
@@ -40,6 +40,7 @@ function loadExpenses() {
         li.innerHTML = `
           ${exp.category} - ₹${exp.amount}
           <button onclick="deleteExpense('${exp._id}')">❌</button>
+          
         `;
 
         list.appendChild(li);
@@ -54,3 +55,4 @@ function deleteExpense(id) {
 }
 
 window.onload = loadExpenses;
+console.log("Expenditure script loaded");

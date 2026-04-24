@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 
 const User = require("../models/User");
 
-console.log("✅ AUTH ROUTE LOADED");
+console.log(" AUTH ROUTE LOADED");
 
 // SIGNUP
 router.post("/signup", async (req, res) => {

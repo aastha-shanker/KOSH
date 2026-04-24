@@ -5,7 +5,7 @@ const bcrypt = require("bcryptjs");
 const app = express();
 require("dotenv").config();
 
-// middleware
+
 app.use(cors());
 app.use(express.json());
 app.use((req, res, next) => {
@@ -21,11 +21,11 @@ mongoose.connect(process.env.MONGO_URL)
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err));
 
-// import model
+
 const Expense = require("./models/Expense");
 
 
-// ➕ Add Expense
+
 app.post("/expenses", async (req, res) => {
   try {
     let newExpense = new Expense(req.body);
@@ -36,7 +36,7 @@ app.post("/expenses", async (req, res) => {
   }
 });
 
-// 📥 Get Expenses
+
 app.get("/expenses", async (req, res) => {
   try {
     let data = await Expense.find();
@@ -46,7 +46,7 @@ app.get("/expenses", async (req, res) => {
   }
 });
 
-// ❌ Delete Expense
+
 app.delete("/expenses/:id", async (req, res) => {
   try {
     await Expense.findByIdAndDelete(req.params.id);
@@ -64,7 +64,7 @@ app.get("/dashboard", authMiddleware, (req, res) => {
   });
 });
 
-// start server
+
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });

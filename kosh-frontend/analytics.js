@@ -1,11 +1,11 @@
-const API = "http://127.0.0.1:3000"; // ✅ FIXED
+const API = "http://127.0.0.1:3000"; 
 
-/* ------------------ CHECK DATA ------------------ */
+
 function isValid(data) {
   return Array.isArray(data) && data.length > 0;
 }
 
-/* ------------------ ANIMATION ------------------ */
+
 function animateValue(id, start, end, duration) {
   const element = document.getElementById(id);
   if (!element) return;
@@ -30,7 +30,7 @@ function animateValue(id, start, end, duration) {
   requestAnimationFrame(step);
 }
 
-/* ------------------ FETCH DATA ------------------ */
+
 fetch(`${API}/expenses`)
   .then(res => res.json())
   .then(data => {
@@ -43,12 +43,11 @@ fetch(`${API}/expenses`)
       return;
     }
 
-    /* ------------------ TOTAL ------------------ */
+    
     let total = data.reduce((sum, exp) => sum + Number(exp.amount), 0);
 
     animateValue("totalCard", 0, total, 1000);
 
-    /* ------------------ CATEGORY MAP ------------------ */
     let categoryMap = {};
 
     data.forEach(exp => {
@@ -56,18 +55,18 @@ fetch(`${API}/expenses`)
         (categoryMap[exp.category] || 0) + Number(exp.amount);
     });
 
-    /* ------------------ AVERAGE ------------------ */
+   
     let avg = total / data.length;
     animateValue("avgCard", 0, avg, 1000);
 
-    /* ------------------ TOP CATEGORY ------------------ */
+   
     let maxCategory = Object.keys(categoryMap).reduce((a, b) =>
       categoryMap[a] > categoryMap[b] ? a : b
     );
 
     document.getElementById("topCategory").innerText = maxCategory;
 
-    /* ------------------ PIE CHART ------------------ */
+   
     if (window.pieChart && typeof window.pieChart.destroy === "function") {
   window.pieChart.destroy();
 }
@@ -98,7 +97,7 @@ fetch(`${API}/expenses`)
       });
     }
 
-    /* ------------------ DATE MAP ------------------ */
+   
     let dateMap = {};
 
     data.forEach(exp => {
@@ -112,7 +111,7 @@ fetch(`${API}/expenses`)
 
     let sortedValues = sortedDates.map(d => dateMap[d]);
 
-    /* ------------------ BAR CHART ------------------ */
+ 
     if (window.barChart && typeof window.barChart.destroy === "function") {
   window.barChart.destroy();
 }
@@ -137,7 +136,7 @@ fetch(`${API}/expenses`)
       });
     }
 
-    /* ------------------ INSIGHT ------------------ */
+    
     let insight = `👀 You spend most on ${maxCategory}.`;
 
     if (total > 5000) {
